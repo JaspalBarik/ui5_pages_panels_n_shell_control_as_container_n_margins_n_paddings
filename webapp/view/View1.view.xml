@@ -1,0 +1,115 @@
+
+<mvc:View
+    controllerName="pagespanelsnshellcontrolascontainer.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <!-- Page represents the Employee Information screen -->
+    <Page
+        id="page"
+        title="{i18n>title}">
+
+        <!-- Panel 1: Personal Information -->
+        <!-- ResponsiveMargin adds space around the Panel -->
+        <!-- width auto allows the Panel to fit with its margins -->
+        <Panel
+            id="personalPanel"
+            headerText="Personal Information"
+            class="sapUiResponsiveMargin"
+            width="auto">
+
+            <!-- Padding creates space inside the Panel content -->
+            <VBox class="sapUiSmallPadding">
+
+                <!-- Employee ID -->
+                <HBox alignItems="Center">
+                    <Label
+                        text="Employee ID:"
+                        width="150px"/>
+
+                    <Text text="101"/>
+                </HBox>
+
+                <!-- Employee Name -->
+                <HBox
+                    alignItems="Center"
+                    class="sapUiSmallMarginTop">
+
+                    <Label
+                        text="Employee Name:"
+                        width="150px"/>
+
+                    <Text text="Rahul"/>
+                </HBox>
+
+                <!-- Employee Email -->
+                <HBox
+                    alignItems="Center"
+                    class="sapUiSmallMarginTop">
+
+                    <Label
+                        text="Email:"
+                        width="150px"/>
+
+                    <Text text="rahul@example.com"/>
+                </HBox>
+
+            </VBox>
+        </Panel>
+
+        <!-- Panel 2: Work Information -->
+        <!-- ResponsiveMargin adds space around the Panel -->
+        <!-- width auto allows the Panel to fit with its margins -->
+        <Panel
+            id="workPanel"
+            headerText="Work Information"
+            class="sapUiResponsiveMargin"
+            width="auto">
+
+            <VBox class="sapUiSmallPadding">
+
+                <!-- Department -->
+                <HBox alignItems="Center">
+                    <Label
+                        text="Department:"
+                        width="150px"/>
+
+                    <Text text="IT"/>
+                </HBox>
+
+                <!-- Designation -->
+                <HBox
+                    alignItems="Center"
+                    class="sapUiSmallMarginTop">
+
+                    <Label
+                        text="Designation:"
+                        width="150px"/>
+
+                    <Text text="SAPUI5 Developer"/>
+                </HBox>
+
+                <!-- Location -->
+                <HBox
+                    alignItems="Center"
+                    class="sapUiSmallMarginTop">
+
+                    <Label
+                        text="Location:"
+                        width="150px"/>
+
+                    <Text text="Bhubaneswar"/>
+                </HBox>
+
+            </VBox>
+        </Panel>
+
+        <!-- Button with spacing at its logical end -->
+        <Button
+            text="Show Employee Details"
+            type="Emphasized"
+            class="sapUiResponsiveMargin"
+            press=".onShowDetails"/>
+
+    </Page>
+</mvc:View>

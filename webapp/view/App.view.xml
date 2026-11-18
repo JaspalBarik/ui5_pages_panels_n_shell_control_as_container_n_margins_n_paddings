@@ -1,0 +1,15 @@
+<mvc:View controllerName="pagespanelsnshellcontrolascontainer.controller.App"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <!-- Shell is the outermost container -->
+    <Shell>  
+
+    <!-- App manages the pages and navigation -->
+    <App id="app">
+    </App>
+
+    </Shell> 
+
+</mvc:View>
